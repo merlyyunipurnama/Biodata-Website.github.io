@@ -1,0 +1,114 @@
+body {
+  background-image: url('bg1.png');
+  background-size: cover; /* Menyesuaikan ukuran gambar agar selalu menutupi seluruh area body */
+  background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+  background-position: center center; /* Posisi gambar di tengah */
+  line-height: 1.5; /* Merubah jarak antar baris tulisan */
+}
+
+.navbar {
+  background-color: #040000;
+  color: rgb(240, 37, 37); /* Mengubah warna tulisan menjadi kuning */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Mengaktifkan model flexbox */
+    justify-content: center; /* Membuat konten berada di tengah secara horizontal */
+    text-align: center; /* Membuat teks berada di tengah secara horizontal */
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: rgb(244, 23, 23);
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: white;
+}
+
+.hero {
+  background-color: transparent; /* Mengubah latar belakang menjadi transparan */
+  text-align: center;
+  padding: 100px 0;
+  position: relative;
+}
+
+.hero-content h1 {
+  margin-bottom: 10px;
+  color: rgb(246, 9, 9); /* Mengubah warna tulisan menjadi kuning */
+  font-family: "Arial", sans-serif; /* Mengatur jenis font */
+  font-size: 36px; /* Memperbesar ukuran tulisan */
+  font-weight: bold; /* Membuat tulisan menjadi tebal */
+}
+
+.hero-content p {
+  margin-bottom: 20px;
+  color: white; /* Mengubah warna tulisan menjadi putih */
+  font-family: "Arial", sans-serif; /* Mengatur jenis font */
+  font-size: 18px; /* Mengatur ukuran tulisan */
+}
+
+.content {
+  background-color: transparent; /* Mengubah latar belakang menjadi transparan */
+  padding: 50px 20px;
+  text-align: center;
+  display: none;
+}
+
+/* CSS untuk tampilan halaman HOME */
+#home:target {
+  width: 100vw !important; /* Mengatur lebar sesuai dengan lebar layar */
+  height: 100vh !important; /* Mengatur tinggi sesuai dengan tinggi layar */
+  justify-content: center; /* Untuk konten ditengah secara vertikal */
+  align-items: center; /* Untuk konten ditengah secara vertikal */
+}
+
+/* CSS untuk tampilan halaman BIODATA dan CONTACT */
+#BIODATA:target,
+#contact:target { /* Perbaiki penulisan ID contact menjadi lowercase */
+  height: 100vh; /* Mengatur tinggi sesuai dengan tinggi layar */
+  display: block; /* Tampilkan halaman BIODATA dan CONTACT */
+  padding: 20px; /* Tambahkan padding agar konten tidak menempel langsung pada batas layar */
+  margin-top: 20px; /* Tambahkan margin atas agar tidak menumpuk dengan halaman sebelumnya */
+}
+
+/* CSS untuk tampilan tulisan "Biodata" dan "Contact" */
+#BIODATA:target p,
+#contact:target p {
+  color: rgb(255, 255, 255); /* Mengubah warna tulisan menjadi kuning */
+}
+
+#BIODATA h2,
+#contact:target h2 {
+  color: rgb(255, 0, 0); /* Mengubah warna tulisan menjadi kuning */
+}
+
+/* CSS untuk mengatur ukuran gambar dan membuatnya berbentuk bulat */
+.shape {
+  width: 200px; /* Atur lebar gambar */
+  height: 200px; /* Atur tinggi gambar */
+  border-radius: 50%; /* Membuat gambar berbentuk bulat */
+}
+
+
